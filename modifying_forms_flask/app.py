@@ -27,7 +27,7 @@ def users_new():
     )
 
 def save_user(user):
-    with open('users.json', 'a') as file:
+    with open('modifying_forms_flask/users.json', 'a') as file:
         file.write(json.dumps(user) + '\n')
 
 @app.route('/users', methods=['GET', 'POST'])
